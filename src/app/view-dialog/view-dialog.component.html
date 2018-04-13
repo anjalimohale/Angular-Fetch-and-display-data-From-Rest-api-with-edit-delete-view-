@@ -1,0 +1,19 @@
+<span style="color:purple"><h4>Id: {{data.id}}</h4></span>
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile
+  colspan=4 rowspan=2
+  style="background-color: rgb(236, 209, 236)">
+  <img [src]="data.avatar">
+  &nbsp; &nbsp; First Name: {{data.first_name}} <br>
+  &nbsp; &nbsp;  Last Name: {{data.last_name}}
+  </mat-grid-tile>
+  <mat-grid-tile
+  colspan=4 rowspan=1>
+  <table class="table">
+    <tr>
+      <th><button type="submit" mat-button (click)="onClick()" color="accent">Ok</button></th>
+      <th><button type="submit" mat-button (click)="onClickClose()" color="accent">Close</button></th>
+    </tr>
+  </table>
+</mat-grid-tile>
+</mat-grid-list>

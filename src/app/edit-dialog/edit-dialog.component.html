@@ -1,0 +1,17 @@
+<div>
+    <mat-form-field color="accent">
+      <input [formControl]="first_name" matInput type="text" placeholder="First Name">
+    </mat-form-field>
+
+    <mat-form-field color="accent">
+      <input [formControl]="last_name" matInput type="text" placeholder="Last Name">
+    </mat-form-field>
+
+      <input type="file" (change)="onFileChange($event)">
+</div>
+<table class="table">
+    <tr>
+      <th><button type="submit" mat-button (click)="onClick()" color="accent">Save</button></th>
+      <th><button mat-button (click)="onClickClose()" color="accent">Close</button></th>
+    </tr>
+  </table>
